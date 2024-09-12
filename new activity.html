@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Interface Web </title>
+
+    <link rel="stylesheet" href="new cativity.css">
+    <script src="jquery-2.1.4.js"></script>
+    <script src="new activity.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+</head>
+
+<body>
+<h1> Welcome Guest </h1><br><br><br><br>
+<center>
+    <table id="table1">
+        <form id="Form" name="Form" onsubmit="return test();">
+            <tr>
+                <td><label>FirstName:</label></td>
+                <td><input type="text" name="name" id="fname" onkeypress="validate_name(event)"></td>
+                <td><p id="fname_msg"></p></td>
+            </tr>
+
+            <tr>
+                <td><label>LastName:</label></td>
+                <td><input type="text" id="lname" onkeypress="validate_name(event)"></td>
+                <td><p id="lname_msg"></p></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><input type="radio" name="Gender" value="Male" id="male"/>Male</input>
+                    <input type="radio" name="Gender" value="Female" id="female"/>Femal</input></td>
+                <td><p id="radio_msg"></p></td>
+            </tr>
+
+            <tr>
+                <td><label>Skills:</label></td>
+                <td><input type="checkbox" name="skill" value="HTML" id="html_id"> HTML
+                    <input type="checkbox" name="skill" value="CSS" id="css_id"> CSS
+                </td>
+            <tr>
+                <td><label></label></td>
+                <td><input type="checkbox" name="skill" value="JavaScript" id="js_id"> JavaScript
+                    <input type="checkbox" name="skill" value="jQuery" id="jq_id"> jQuery
+                </td>
+                <td><p id="skills_msg"></p></td>
+            </tr>
+
+            </tr>
+
+            <tr>
+                <td><label>Major:</label></td>
+                <td>
+                    <input type="text" name="major" id="Major" list="majorname">
+                    <datalist id="majorname">
+                        <option></option>
+                        <option value="IT system"></option>
+                        <option value="Mobile"></option>
+                        <option value="MultiMedia"></option>
+                        <option value="Computer Science"></option>
+                        <option value="Softwear Engineering"></option>
+                </td>
+                <td><p id="major_msg"></p></td>
+            </tr>
+
+            <tr>
+                <td><label>Hire Date:</label></td>
+                <td><input type="date" id="hDate"></td>
+                <td><p id="hdate_msg"></p></td>
+            </tr>
+
+            <tr>
+                <td><label> <br><br><br> Descrption:</label></td>
+                <td><textarea name="comment" rows="4" cols="40" id="descTA"></textarea></td>
+                <td><p id="desc_msg"></p></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="Add_btn" type="button" onclick="add()">ADD</button>
+                    <button id="Update_btn" type="button" disabled="true" onclick="update()">UPDATE</button>
+                </td>
+            </tr>
+
+        </form>
+    </table>
+    <br>
+
+    <table id="table2" border="3">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Major</td>
+                <td>Hire Date</td>
+                <td colspan="3">Action</td>
+            </tr>
+        </thead>
+        <tbody id="table_data">
+
+        </tbody>
+    </table>
+
+
+</body>
+</html>

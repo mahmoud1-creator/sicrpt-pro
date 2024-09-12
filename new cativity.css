@@ -1,0 +1,25 @@
+body{
+    background-image: radial-gradient(circle, #816675, #8d677a, #98687d, #a56880, #b16881, #b16d91, #ad73a2, #a67ab2, #808bc5, #5999c6, #49a3b9, #5ca9a4);
+}
+h1{
+	margin-left: 550px;
+    position: fixed;   
+}
+#table1{
+	border: 2px solid;
+	height:500px;
+	width: 70%;
+	background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+}
+#table2{
+	border: 2px solid; 
+	width: 70%;
+	text-align: center;
+	background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 20%, rgba(148,187,233,1) 68%); 
+
+}
+label{
+	margin-left:10px ;
+}
